@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+
+.board-container {
+  font: normal 12px/150% Arial, Helvetica, sans-serif; 
+  background: #fff; 
+  overflow: hidden; 
+  border: 2px solid #A65B1A; 
+  width: 500px;
+}
+
+.board-container table { 
+  border-collapse: collapse; 
+  text-align: center; 
+  width: 100%; 
+} 
+
+.board-container table td, .board-container table th {
+ padding: 10px 10px; 
+}
+.board-container table td { 
+  color: #7F4614; 
+  border-left: 5px solid #7F4614;
+  font-size: 16px;
+  border-bottom: 5px solid #7F4614;
+  font-weight: bold; 
+}
+.board-container table td:first-child {
+  border-left: none; 
+}
+.board-container table tr:last-child td { 
+  border-bottom: none; 
+}
+
+.board-container table tr td:hover {
+  background-color: yellow;
+}
